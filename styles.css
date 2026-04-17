@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* Penny Juice Website Styles */
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ---------- HEADER ---------- */
+#header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff6600;
+    margin: 0;
+}
+
+/* ---------- NAVIGATION ---------- */
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+#content {
+    text-align: center;
+    padding: 20px;
+}
+
+#content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+.about-main {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+.section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+#content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+#content img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.slider-container {
+  width: 500px; /* Adjust based on GIF size */
+  height: 523px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 400%; /* (Number of images + 1) * 100% */
+  animation: slide 12s infinite; /* Total duration for all slides */
+}
+
+.slider-wrapper img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover; /* Ensures GIF fills the area */
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(0); }
+  33% { transform: translateX(-500px); }
+  58% { transform: translateX(-500px); }
+  66% { transform: translateX(-1000px); }
+  91% { transform: translateX(-1000px); }
+  100% { transform: translateX(-1500px); }
+}
+<style>
+    /* ===== Base styles ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fdf7ff;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Layout ===== */
+    header {
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      background-color: rgba(255, 255, 255, 0.25);
+      font-size: 0.9rem;
+    }
+
+    nav a.active {
+      background-color: #ffffff;
+      color: #ff4f9a;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .page-title h1 {
+      font-size: 2rem;
+      color: #ff4f9a;
+      margin-bottom: 0.3rem;
+    }
+
+    .page-title p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* ===== Flavors grid (Flexbox with wrap) ===== */
+    .flavors-grid {
+      display: flex;
+      flex-wrap: wrap; /* important for assignment */
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .flavor-card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      width: 220px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .flavor-badge {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* Example colors per flavor */
+    .flavor-orange   { background: linear-gradient(135deg, #ffb347, #ff7e00); }
+    .flavor-grape    { background: linear-gradient(135deg, #b57bff, #7b2cff); }
+    .flavor-apple    { background: linear-gradient(135deg, #9be15d, #00c853); }
+    .flavor-berry    { background: linear-gradient(135deg, #ff6fb1, #ff3f6c); }
+    .flavor-tropical { background: linear-gradient(135deg, #ffd86f, #fc6262); }
+    .flavor-lemon    { background: linear-gradient(135deg, #fff176, #ffd600); }
+
+    .flavor-card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #333;
+    }
+
+    .flavor-card p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.7rem;
+    }
+
+    .flavor-tagline {
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: #ff4f9a;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ===== Footer / small note ===== */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2.5rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem 1rem;
+      }
+    }
+/* Ingredients Page */
+.ingredients-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.ingredient-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.ingredient-card:hover {
+    transform: scale(1.05);
+}
+
+.ingredient-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff7b00;
+}
+
+.ingredient-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredient-card ul li {
+    background: #ffe6c7;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+
+
+/* ---------- FOOTER ---------- */
+#footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #555;
+}

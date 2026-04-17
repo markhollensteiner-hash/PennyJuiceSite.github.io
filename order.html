@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Juice – Healthy Lifestyle Website</title>
+    <meta name="keywords" content="Las Vegas, Healthy Lifestyle, Pre School, Juices">
+    <meta name="author" content="Mark Hollensteiner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <div id="container">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Penny Juice</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="flavors.html">Flavors</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+
+       <!-- Main Content -->
+        <main id="content">
+            <h2>Place Your Order</h2>
+            <p>Fill out the form below to order Penny Juice for your preschool, daycare, or organization. A representative will contact you to confirm your order.</p>
+
+            <form id="order-form">
+
+                <!-- Customer Info -->
+                <div class="form-section">
+                    <h3>Customer Information</h3>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="organization">School / Organization:</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+
+                <!-- Order Details -->
+                <div class="form-section">
+                    <h3>Order Details</h3>
+
+                    <label for="flavor">Select Flavor:</label>
+                    <select id="flavor" name="flavor" required>
+                        <option value="">-- Choose a Flavor --</option>
+                        <option value="orange">Orange</option>
+                        <option value="grape">Grape</option>
+                        <option value="apple">Apple</option>
+                        <option value="fruitpunch">Fruit Punch</option>
+                        <option value="berrymix">Berry Mix</option>
+                    </select>
+
+                    <label for="quantity">Quantity (Cases):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+
+                    <label for="comments">Additional Notes:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any special instructions?"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn">Submit Order</button>
+
+            </form>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; 2026 Penny Juice – All Rights Reserved</p>
+        </footer>
+
+    </div>
+</body>
+</html>
