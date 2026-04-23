@@ -325,6 +325,92 @@ body {
 </head>
 <body>
 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffbf69, #ff9f1c);
+    color: white;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #2ec4b6;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #1fa89d;
+}
+
+/* BLOG SECTION */
+.blog-section {
+    padding: 50px 20px;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.post {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post h3 {
+    margin-top: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff9f1c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
 
 
 /* ---------- FOOTER ---------- */
